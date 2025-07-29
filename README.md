@@ -11,7 +11,7 @@ Website is live - https://anjan1920.github.io/Weather-app/
 
 
 ## 🛠️ Tech Stack
-- HTML, CSS, JavaScript (Vanilla)
+- HTML, Tailwind CSS, JavaScript 
 - OpenWeatherMap API
 
 ## 🌐 API Details

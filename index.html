@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+<section class="bg-gray-900 h-dvh w-full flex justify-center items-center">
+    <diV id="crad" class="w-4/5 max-w-md min-h-40  bg-gradient-to-br from-[#fcfffe] to-[#26139f] m-10 rounded-2xl p-10 text-center">
+        <div id="search" class="flex items-center justify-between w-full gap-4">
+            <input id="city_input" class="bg-amber-50 border-0 text-center outline-0 rounded-2xl h-12 w-full" 
+            type="text" placeholder="Enter city name" spellcheck="false"/>
+
+            <button 
+            id="search_btn"
+            class="border-0 outline-0 bg-[#ebfffc] w-[40px] h-[40px] rounded-4xl cursor-pointer hover:scale-105">
+                <img src="images/search.png" alt="icon" class="w-4 h-4 ml-1" />
+            </button>
+
+        </div>
+
+        <!-- inject by js -->
+        <div id="display" class="text-white">
+            <img id="weather_icon" class="hidden w-[150] mt-[30] ml-14" src="." alt="weather icon">
+            <h1  id="temp_value" class=" hidden text-6xl font-medium"></h1>
+            <h2 id="city_name" class=" hidden text-4xl font-light mt-1.5">Kolkata</h2>
+
+            <div class="flex  items-center gap-2 justify-between " id="detalis">
+                <div id="humidity_section" class="hidden">
+                    <img src="./images/humidity.png" alt="logo">
+                    <p>Humidity</p>
+                    <p id="humidity_value"></p>
+
+                </div>
+                <div id="wind_section" class="hidden">
+                    <img src="./images/wind.png" alt="">
+                    <p>Wind</p>
+                    <p id="wind_speed"> </p>
+
+                </div>
+            </div>
+        </div>
+        <h3 id="error_message" class="hidden text-2xl text-white m-4">City not found</h3>
+        <!-- loader -->
+        <div id="loader" class="hidden  flex justify-center mt-4">
+            <div class="w-6 h-6 border-4 border-blue-500 border-t-transparent rounded-full animate-spin duration-900"></div>
+        </div>
+
+        
+    </div> 
+</section>
+   
+</body>
+</html>
